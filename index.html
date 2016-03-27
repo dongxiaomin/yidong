@@ -3,10 +3,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Document</title>
+  <script src="./js/tab.js"> </script>
 	<link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
   <!--top start-->
+<div class="tops">  
   <div class="top">
     <div class="topleft" >
       <a href="#">手机营业厅</a>
@@ -14,24 +16,30 @@
       <a href="#">积分商城</a>
     </div>
     <div class="topright">
-      <div class="topright1">
-      <a href="#" class="denglu">登陆</a>
-      <span>&nbsp|&nbsp</span>
-      <a href="#">关于中国移动</a>
-      <span>&nbsp|&nbsp</span>
+      <div  class="denglu">
+        <a href="#" class="denglu1">登陆</a>
+        <span>|</span>
+      </div>
+      <div  class="guanyu">
+        <a href="#" class="guanyu1">关于中国移动</a>
+        <span>|</span>
+      </div>
+      
       <a href="#">政企客户</a>
       <span>&nbsp|&nbsp</span>
       <a href="#">ENGLISH</a>
-      </div>
     </div>
   </div>
+</div>  
   <!--top end-->
 
   <!--middle start-->
 <div class="middle">
    <div class="middleleft"></div>
-      <div class="tupian"><img src="./image/logo1.png"></div>
-      <div class= "dizhi">晋中</div>
+      <div class="tupian">
+        <img src="./image/logo1.png">
+      </div>
+      <div class= "dizhi">运城</div>
 
    <div class="middleright">
       <div class="search">
@@ -43,13 +51,12 @@
 
       <div class="hot">
         <span>热门搜索：</span>
-        <a href="#" target="_self" class="hot1">&nbsp&nbsp充值领折扣券&nbsp&nbsp</a>
-        <a href="#" target="_self" class="hot1">&nbsp&nbsp宽带提速抽奖&nbsp&nbsp</a>
-        <a href="#" target="_self" class="hot1">&nbsp&nbspiphone6s4588&nbsp&nbsp</a>
-        <a href="#" target="_self" class="hot2">停复机&nbsp&nbsp
-        </a></a>
-        <a href="#" target="_self" class="hot2">&nbsp&nbsp通话记录查询&nbsp&nbsp</a>
-        <a href="#" target="_self" class="hot2">&nbsp&nbsp彩铃设置&nbsp&nbsp
+        <a href="#" target="_self" class="hot1">充值领券</a>
+        <a href="#" target="_self" class="hot1">宽带预约</a>
+        <a href="#" target="_self" class="hot1">选号入网</a>
+        <a href="#" target="_self" class="hot2">修改套餐</a>
+        <a href="#" target="_self" class="hot2">话费查询</a>
+        <a href="#" target="_self" class="hot2">彩铃设置</a>
       </div>
    </div>
 </div>
@@ -57,14 +64,69 @@
   <!--middle end-->
 
 <!--daohang start-->
-<div class="daohang">
-  <div class="shouye1" id="sy"><a href="#">首页</a></div>
-  <div class="shouye" id="sy"><a href="#">移动商场</a></div>
-  <div class="shouye" id="sy"><a href="#">我的移动</a></div>
-  <div class="shouye" id="sy"><a href="#">网上营业厅</a></div>
-  <div class="shouye" id="sy"><a href="#">服务与支持</a></div>
+<div class="navbar">
+   
+    <li class="navindex">
+      <a href="#">首页</a>
+    </li>
+    <li class="dropdown"  >
+      <a href="#">移动商场</a>
+       <div class="downMenu">
+        <ul>
+          <li>买手机</li>
+          <li>办套餐</li>
+          <li>办业务</li>
+          <li>挑配件</li>
+          <li>立即充值</li>
+          <li>星级查询</li>
+          <li>个人中心</li>
+        </ul>
+       </div>
+    </li>
+    <li class="dropdown"  >
+      <a href="#">我的移动</a>
+       <div class="downMenu">
+        <ul>
+          <li>我的账户</li>
+          <li>套餐余量查询</li>
+          <li>业务状态查询</li>
+          <li>详单查询</li>
+          <li>账单查询</li>
+          <li>积分查询</li>
+          <li>星级查询</li>
+        </ul>
+       </div>
+    </li>
+    <li class="dropdown"  >
+      <a href="#">网上营业厅</a>
+       <div class="downMenu">
+        <ul>
+          <li>网上充值</li>
+          <li>话费服务</li>
+          <li>资费服务</li>
+          <li>先号入网</li>
+          <li>优惠购机</li>
+          <li>业务办理</li>
+          <li>大数据应用</li>
+        </ul>
+       </div>
+    </li>
+    <li class="dropdown" >
+      <a href="#">服务与支持</a>
+       <div class="downMenu">
+        <ul>
+          <li>产品</li>
+          <li>资费专区</li>
+          <li>终端售后点查询</li>
+          <li>国际/港澳台</li>
+          <li>星级服务</li>
+          <li>手机营业厅</li>
+          <li>大数据应用</li>
+        </ul>
+       </div>
+    </li>
+   
 </div>
-
 
 
 
@@ -190,7 +252,7 @@
           <a href="#">其他</a>
         </div>
         <div class="ljcz">
-          <input  id="ljcz1" type="button" value="立即充值" name="btn">
+          <input  id="ljcz1" type="submit" value="立即充值" name="submit">
          <!-- <input type="submit" value="立即充值" name="submit" id="licz1">-->
           <div id="ljcz2">充值99折</div>
         </div>
@@ -251,88 +313,63 @@
        <div class="con_right">
        	<!-- box1  -->
          <div class="box" >
-             <div  class="lianjie1">            
-               <a href="#">
-                <h1>4G上网套餐</br>让您体验更快的上网速度</h1>
-               </a>
-             </div> 
-             <div  class="lianjie2">
-               <a href="#">
+             <a class="lianjie1" href="#">            
+                <h1>4G上网套餐</h1>
+                <h2>让您体验更快的上网速度</h2>
+             </a> 
+             <a class="lianjie2" href="#">
                  <img src="./image/table2.jpg" alt="">
-               </a>
-             </div>
-         	
+             </a>
          </div>
         <!-- box2  -->
          <div class="box" id="hui">
-             <div  class="lianjie1" >            
-               <a href="#">
-                <h1>4G套餐</br>加速加量不加价</h1>
-         	      
-               </a>
-             </div> 
-             <div  class="lianjie2">
-               <a href="#">
-                <img src="./image/table4.jpg" alt="">
-               </a>
-             </div>
-         	
+             <a class="lianjie1" href="#">            
+                <h1>4G套餐</h1>
+                <h2>加速加量不加价</h2>
+             </a> 
+             <a class="lianjie2" href="#">
+                 <img src="./image/table4.jpg" alt="">
+             </a>
          </div>
          <!-- box3  -->
          <div class="box">
-         	<div  class="lianjie1">            
-               <a href="#">
-                <h1>4G飞享套餐</br>超值套餐&nbsp点32个赞</h1>
-         	    
-               </a>
-             </div> 
-               <div  class="lianjie2">
-               <a href="#">
-                   <img src="./image/table6.jpg" alt="">
-               </a>
-             </div>
+          <a class="lianjie1" href="#">            
+                <h1>4G飞享套餐</h1>
+                <h2>超值套餐&nbsp点32个赞</h2>
+          </a> 
+          <a class="lianjie2" href="#">
+                 <img src="./image/table6.jpg" alt="">
+          </a>
          </div>
          <!-- box4  -->
          <div class="box"id="hui">
-            <div  class="lianjie1">            
-               <a href="#">
-                <h1>换卡不换号</br>在线换卡包邮到家&nbsp自助激活</h1>
-         	    
-               </a>
-             </div> 
-               <div  class="lianjie2">
-               <a href="#">
-                   <img src="./image/table3.jpg" alt="">
-               </a>
-             </div>
+          <a class="lianjie1" href="#">            
+                <h1>换卡不换号</h1>
+                <h2>在线换卡包邮到家&nbsp自助激活</h2>
+          </a> 
+          <a class="lianjie2" href="#">
+                 <img src="./image/table3.jpg" alt="">
+          </a>
          </div>
          <!-- box5  -->
          <div class="box">
-            <div  class="lianjie1">            
-               <a href="#">
-                <h1>4G自选套餐</br>自由搭配套餐&nbsp实惠更多</h1>
-         	    
-               </a>
-             </div> 
-               <div  class="lianjie2">
-               <a href="#">
-                   <img src="./image/table5.jpg" alt="">
-               </a>
-             </div>
+          <a class="lianjie1" href="#">            
+                <h1>4G自选套餐</h1>
+                <h2>自由搭配套餐&nbsp实惠更多</h2>
+          </a> 
+          <a class="lianjie2" href="#">
+                 <img src="./image/table5.jpg" alt="">
+          </a>
          </div>
          <!-- box6  -->
          <div class="box" id="hui">
-            <div  class="lianjie1">            
-               <a href="#">
-                <h1>4G手机</br>4G手机&nbsp&nbsp品牌、厂家优惠大汇</h1>
-         	   
-               </a>
-             </div> 
-               <div  class="lianjie2">
-               <a href="#">
-                   <img src="./image/table7.jpg" alt="">
-               </a>
-             </div>
+          <a class="lianjie1" href="#">            
+                <h1>4G手机</h1>
+                <h2>4G手机&nbsp&nbsp品牌、厂家优惠大汇</h2>
+          </a> 
+          <a class="lianjie2" href="#">
+                 <img src="./image/table7.jpg" alt="">
+          </a>
          </div>
        </div>
     </div>
@@ -347,50 +384,66 @@
   </div>
 
   <div class="conten1">
-      <div class="conten1.1"><a href="#">
-        <h1>iPhone 6s 国行公开版</h1>
-        <h2>新一代iPhone 3D Touch屏幕</h2>
-        <h3>￥4879元起</h3>
-        </a>
-      </div>
-      <div class="conten1.2">
-        <a href="http://www.10086.cn/4G/manhua">
-           <div class="mobile1"><img src="./image/mobile1.jpg"></div>
-        </a>
-      </div>
-  </div>
-  <div class="conten1">
-    <a href="#">
-        <h1>酷派锋尚 Y75</h1>
-        <h2>5.5英寸屏幕</h2>
-        <h3>￥549</h3>
-        <h4>￥649</h4>
-        <a href="http://www.10086.cn/4G/manhua">
-           <div class="mobile1"><img src="./image/mobile2.jpg"></div>
-       </a>
+    <a  class="conten1-1" href="#">
+      <h2>iPhone 6s 国行公开版</h2>
+      <h3>新一代iPhone 3D Touch屏幕</h3>
+    </a>
+    <div class="conten1-2">
+      <a href="#">
+        <p>￥4879元起</p>
       </a>
+    </div>
+    <div class="conten1-3">
+      <a href="#"><img src="./image/mobile1.jpg"></a>
+    </div>
   </div>
+
   <div class="conten1">
-    <a href="#">
-        <h1>华为畅享5S</h1>
-        <h2>金属机身，快速指纹识别</h2>
-        <h3>￥1049</h3>
-        <h4>￥1149</h4>
-        <a href="http://www.10086.cn/4G/manhua">
-           <div class="mobile1"><img src="./image/mobile3.jpg"></div>
-       </a>
+    <a  class="conten1-1" href="#">
+      <h2>酷派锋尚 Y75</h2>
+      <h3>5.5英寸屏幕</h3>
+    </a>
+    <div class="conten1-2">
+      <a href="#">
+        <p>￥549</p>
+        <span>￥649</span>
       </a>
+    </div>
+    <div class="conten1-3">
+      <a href="#"><img src="./image/mobile2.jpg"></a>
+    </div>
+  </div>
+
+  
+   <div class="conten1">
+    <a  class="conten1-1" href="#">
+      <h2>华为畅享5S Y75</h2>
+      <h3>金属机身，快速指纹识别</h3>
+    </a>
+    <div class="conten1-2">
+      <a href="#">
+        <p>￥1049</p>
+        <span>￥1149</span>
+      </a>
+    </div>
+    <div class="conten1-3">
+      <a href="#"><img src="./image/mobile3.jpg"></a>
+    </div>
   </div>
   <div class="conten1" id="conten4">
-   <a href="#">
-        <h1>华为mate 8</h1>
-        <h2>6.0英寸大屏 Android 6.0</h2>
-        <h3>￥3199</h3>
-        <h4><h4>￥3299</h4></h4>
-        <a href="http://www.10086.cn/4G/manhua">
-           <div class="mobile1"><img src="./image/mobile4.jpg"></div>
-       </a>
+    <a  class="conten1-1" href="#">
+      <h2>华为mate 8</h2>
+      <h3>6.0英寸大屏 Android 6.0</h3>
+    </a>
+    <div class="conten1-2">
+      <a href="#">
+        <p>￥3199</p>
+        <span>￥3299</span>
       </a>
+    </div>
+    <div class="conten1-3">
+      <a href="#"><img src="./image/mobile4.jpg"></a>
+    </div>
   </div>
 </div>
 <!--buy end-->
@@ -409,89 +462,66 @@
        <div class="con_right">
         <!-- yw1  -->
          <div class="box" >
-             <div  class="lianjie1">            
-               <a href="#">
-                <h1>两城一家</br>两城一家&nbsp&nbsp为你省到家</h1>
-                
-               </a>
-             </div> 
-               <div  class="lianjie2">
-               <a href="#">
-                   <img src="./image/wlan1.jpg" alt="">
-               </a>
-             </div>
-          
+          <a class="lianjie1" href="#">            
+                <h1>两城一家</h1>
+                <h2>两城一家&nbsp&nbsp为你省到家</h2>
+          </a> 
+          <a class="lianjie2" href="#">
+                 <img src="./image/wlan1.jpg" alt="">
+          </a>
          </div>
         <!-- yw2  -->
-         <div class="box" >
-             <div  class="lianjie1" >            
-               <a href="#">
-                <h1>流量放心包</br>随心浏览&nbsp&nbsp放心上网</h1>
-              
-               </a>
-             </div> 
-               <div  class="lianjie2">
-               <a href="#">
-                   <img src="./image/wlan3.jpg" alt="">
-               </a>
-             </div>
-          
+        <div class="box" >
+          <a class="lianjie1" href="#">            
+                <h1>流量放心包</h1>
+                <h2>随心浏览&nbsp&nbsp放心上网</h2>
+          </a> 
+          <a class="lianjie2" href="#">
+                 <img src="./image/wlan3.jpg" alt="">
+          </a>
          </div>
          <!-- yw3  -->
-         <div class="box">
-          <div  class="lianjie1">            
-               <a href="#">
-                <h1>家庭网</br>家庭沟通专享&nbsp亲情欢乐随行</h1>
-              
-               </a>
-             </div> 
-               <div  class="lianjie2">
-               <a href="#">
-                   <img src="./image/wlan5.jpg" alt="">
-               </a>
-             </div>
+         <div class="box" >
+          <a class="lianjie1" href="#">            
+                <h1>家庭网</h1>
+                <h2>家庭沟通专享&nbsp亲情欢乐随行</h2>
+          </a> 
+          <a class="lianjie2" href="#">
+                 <img src="./image/wlan5.jpg" alt="">
+          </a>
          </div>
          <!-- yw4  -->
-         <div class="box">
-            <div  class="lianjie1">            
-               <a href="#">
-                <h1>手机报 </br>让您轻松了解最新动态</h1>
-             
-               </a>
-             </div> 
-               <div  class="lianjie2">
-               <a href="#">
-                   <img src="./image/wlan2.jpg" alt="">
-               </a>
-             </div>
+         <div class="box" >
+          <a class="lianjie1" href="#">            
+                <h1>手机报</h1>
+                <h2>让您轻松了解最新动态</h2>
+          </a> 
+          <a class="lianjie2" href="#">
+                 <img src="./image/wlan2.jpg" alt="">
+          </a>
          </div>
          <!-- yw5  -->
-         <div class="box">
-            <div  class="lianjie1">            
-               <a href="#">
-                <h1>年季流量包</br>年季流量特惠&nbsp上网巨优惠</h1>
-              
-               </a>
-             </div> 
-               <div  class="lianjie2">
-               <a href="#">
-                   <img src="./image/wlan4.jpg" alt="">
-               </a>
-             </div>
+         <div class="box" >
+          <a class="lianjie1" href="#">            
+                <h1>年季流量包</h1>
+                <h2>年季流量特惠&nbsp上网巨优惠</h2>
+          </a> 
+          <a class="lianjie2" href="#">
+                 <img src="./image/wlan4.jpg" alt="">
+          </a>
          </div>
          <!-- yw6  -->
+
+
          <div class="box" >
-            <div  class="lianjie1">            
-               <a href="#">
-                <h1>包月流量包 </br>流量费用双封顶&nbsp&nbsp用的安心></h1>
-             
-               </a>
-             </div> 
-               <div  class="lianjie2">
-               <a href="#">
-                   <img src="./image/wlan6.jpg" alt="">
-               </a>
-             </div>
+          <a class="lianjie1" href="#">            
+                <h1>包月流量包</h1>
+                <h2>流量费用双封顶&nbsp&nbsp用的安心</h2>
+          </a> 
+          <a class="lianjie2" href="#">
+                 <img src="./image/wlan6.jpg" alt="">
+          </a>
+         </div>   
          </div>
        </div>
     </div>
@@ -567,37 +597,37 @@
        <p>
 
           <a href="#">新闻中心</a>
-            <span>&nbsp;|&nbsp</span>
+            <span>&nbsp|&nbsp</span>
           <a href="#">诚聘英才</a>
-             <span>&nbsp;|&nbsp</span>
+             <span>&nbsp|&nbsp</span>
           <a href="#">采购信息</a>
-             <span>&nbsp;|&nbsp</span>
+             <span>&nbsp|&nbsp</span>
           <a href="#">企业合作</a>
-             <span>&nbsp;|&nbsp</span>
+             <span>&nbsp|&nbsp</span>
           <a href="#">联系我们</a>
-            <span>&nbsp;|&nbsp</span>
+            <span>&nbsp|&nbsp</span>
           <a href="#">中国移动研究院</a>
-             <span>&nbsp;|&nbsp</span>
+             <span>&nbsp|&nbsp</span>
           <a href="#">中国移动设计院</a>
-             <span>&nbsp;|&nbsp</span>
+             <span>&nbsp|&nbsp</span>
           <a href="#">网站地图</a>
-             <span>&nbsp;|&nbsp</span>
+             <span>&nbs|&nbsp</span>
           <a href="#">友情链接</a>
        </p>
        <p>
             <span>网上营业厅：</span>
           <a href="#">wap.10086.cn</a>
-             <span>&nbsp;&nbsp</span>
+             <span>&nbsp&nbsp</span>
            <span>语言自助服务：</span>
           <a href="#">10086</a>
-             <span>&nbsp;&nbsp</span>
+             <span>&nbsp&nbsp</span>
           <span>短信营业厅：</span>
           <a href="#">10086</a>
-             <span>&nbsp;&nbsp</span>
+             <span>&nbsp&nbsp</span>
           <a href="#">自助终端</a>
-          <span>&nbsp;&nbsp</span>
+          <span>&nbsp&nbsp</span>
           <a href="#">营业厅</a>
-          <span>&nbsp;&nbsp</span>
+          <span>&nbsp&nbsp</span>
           <a href="#">手机营业厅下载</a>
        </p>
         <p>
@@ -625,12 +655,23 @@
             </p>
             <div  id="gov1"><a href="#" >京ICP备05002571号<a></div>
    </div>
-  <!-- fengdi end-->
+<!-- fengdi end-->
 
-  <!-- kefu start 
-    <div class="kefu" style="display:block;">
-       <img src="./image/kf.gif" class="kf1">
-    </div>
-  kefu end -->
+<!-- kefu start  -->
+<div class="kefu">
+   <div class="kefu11">
+    <a href="#"><img src="./image/kf.gif"></a>
+   </div>
+   <div class="kefu1">
+    <a href="#"><img src="./image/kefu1.gif" ></a>
+   </div>
+   <div class="kefu2">
+    <a href="#"><img src="./image/kefu2.gif"></a>
+   </div>
+   <div class="kefu3">
+    <a href="#"><img src="./image/kefu3.gif"></a>
+   </div>
+</div>
+<!--   kefu end  --> 
 </body>
 </html>
