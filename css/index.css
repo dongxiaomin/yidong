@@ -354,44 +354,42 @@ float:left;
   margin-left: 171px;
  }
 .banner_service{
-       width:280px;
-       height:350px;
-       /*background:green;*/
-       float:right;
-       border:1px solid #DFDFDF;
-       /*圆角半径*/
-       border-radius:2px;
-               }
-          .service_top{
-                      width:278px;
-                      height:160px;
-                      }
-          .service_item{
-	                 width :85px;
-	                 height :78px;
-	                 float:left;
-	                 margin-left: 7px;
-	                 margin-bottom: 2px;
-	                 display: inline;
-	                 text-align: center;
-	                /* background: #ccc;*/
-                         }
-          .service_item img{
-	             margin-top: 10px;
-                            }
- .qiang{
+  width:280px;
+  height:350px;
+  float:right;
+  border:1px solid #DFDFDF;
+  /*圆角半径*/
+  border-radius:2px;
+}
+.service_top{
+   width:278px;
+   height:160px;
+}
+.service_item{
+	 width :85px;
+	 height :78px;
+	 float:left;
+	 margin-left: 7px;
+	 margin-bottom: 2px;
+	 display: inline;
+	 text-align: center;
+}
+.service_item img{
+	 margin-top: 10px;
+}
+.qiang{
     position:absolute;
     right:88px;
     top:240px;
     z-index: 9999;
   }                           
 .service_bottom{
-          width:259px;
-          height:159px;
-          /*background:#EFEFEF;*/
-         padding: 11px 10px 10px 10px;
-         float: left;}
-                      
+   width:259px;
+   height:159px;
+   /*background:#EFEFEF;*/
+   padding: 11px 10px 10px 10px;
+   float: left;
+}                   
 .czjf a  {
     float: left;
     font: bold 14px/36px;
@@ -455,7 +453,6 @@ float:left;
      text-align: center;
      padding-left:70px;
      float: left;
-
     /*background:red;*/
 }
 #ljcz1{
@@ -476,7 +473,6 @@ float:left;
     width: 73px;
     line-height: 30px;
     float: left;
-
 }
 /*banner end*/
 
@@ -627,6 +623,8 @@ float-size:15px;
 /*g4send */
 
 
+
+
 /*buy start*/
 .buy{
   width: 1201px;
@@ -661,6 +659,7 @@ float:right;
   border-left:1px solid #DFDFDF;
   border-bottom:1px solid #DFDFDF;
   float:left;
+  position: relative;
 }
 .conten1-1{
   width: 299px;
@@ -712,6 +711,48 @@ float:right;
 }
 .conten1-3 img:hover{
   padding-right:30px;
+}
+.buyphonejb2{
+  width: 44px;
+  height: 58px;
+  position: absolute;
+  background: url(../image/jb.gif) no-repeat -64px 0;
+  top:18px;
+  right: 30px;
+  text-align: center;
+  line-height: 41px;
+}
+.buyphonejb2 a{
+  color: #fff;
+  font-size: 15px;
+}
+.buyphonejb3{
+  width: 44px;
+  height: 58px;
+  position: absolute;
+  background: url(../image/jb.gif) no-repeat -128px 0;
+  top:18px;
+  right: 30px;
+  text-align: center;
+  line-height: 41px;
+}
+.buyphonejb3 a{
+  color: #fff;
+  font-size: 15px;
+}
+.buyphonejb4{
+  width: 44px;
+  height: 58px;
+  position: absolute;
+  background: url(../image/jb.gif) no-repeat -192px 0;
+  top:18px;
+  right: 30px;
+  text-align: center;
+  line-height: 41px;
+}
+.buyphonejb4 a{
+  color: #fff;
+  font-size: 15px;
 }
 #conten4{
   border-right:1px solid #DFDFDF;
@@ -850,14 +891,24 @@ height:36px;
 .gg_3 a{
 color:#0085d0;
 }
-.gg_4{
-  float:left;
-
-  width:64px;
-height:36px;
-/*background:blue;*/
+.gg_4 .speakleft{
+  color: #3580ba;
+  text-decoration: none;
+  width: 22px;
+  font: bold 15px/25px "宋体";
+  height: 38px;
+  line-height: 38px;
+  float: left;
 }
-
+.gg_4 .speakright{
+  color: #3580ba;
+  text-decoration: none;
+  width: 22px;
+  font: bold 15px/25px "宋体";
+  height: 38px;
+  line-height: 38px;
+  float: left;
+}
 
 
 /*gg end */
