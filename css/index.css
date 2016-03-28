@@ -296,11 +296,10 @@ float:left;
   margin-right: 2px;
   margin-left: 2px;
   border-radius:50px;
-  background-color: #3E3E3E;
-    float: left;
-    color:#fff;
-    line-height: 18px;
-    text-align: center;
+  background-color: #566370;
+  float: left;
+  line-height: 18px;
+  text-align: center;
 }
 .yuandian a:hover{
   background: #b61b1f;
@@ -351,7 +350,6 @@ float:left;
            }
 .banner1{
   position: absolute;
-  margin-left: 171px;
  }
 .banner_service{
   width:280px;
