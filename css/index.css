@@ -298,14 +298,13 @@
   float: left;
   line-height: 18px;
   text-align: center;
-  
 }
 .btnL{
   width: 28px;
   height: 62px;
   background-color: #A0929A;
   position: absolute;
-   z-index: 0;  
+   z-index:99999;  
   margin-top: 144px;
   margin-left: 0;
   line-height: 62px;
@@ -322,7 +321,7 @@
   height: 62px;
   background-color: #A0929A;
   position: absolute;
-   z-index: 0;  
+   z-index: 99999;  
   margin-top: 144px;
   margin-left: 712px;
   line-height: 62px;
