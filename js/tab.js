@@ -33,9 +33,14 @@ var btnR=document.getElementsByClassName("btnR")[0]
   var t=setInterval(move,2000)
   wins.onmouseover=function(){
     clearInterval(t)
+    btnL.style["z-index"]=999;
+    btnR.style["z-index"]=999;
   }
   wins.onmouseout=function(){
     t=setInterval(move,1000)
+    btnL.style["z-index"]=0;
+    btnR.style["z-index"]=0;
+
   }
   for(var i=0;i<imgs.length;i++){
     spans[i].index=i;
