@@ -25,21 +25,19 @@ var wins=document.getElementsByClassName("banner_img")[0]
 var imgs=document.getElementsByClassName("bannera")
 var btnL=document.getElementsByClassName("btnL")[0]
 var btnR=document.getElementsByClassName("btnR")[0]
-  // console.log(btnL)
-  // console.log(btnR)
   var spans=document.getElementsByClassName("btnspan")
   var num=0;
   spans[0].style.background="red";
-  var t=setInterval(move,2000)
+  var t=setInterval(moveR,2000)
   wins.onmouseover=function(){
     clearInterval(t)
-    btnL.style["z-index"]=999;
-    btnR.style["z-index"]=999;
+    btnL.style.display="block";
+    btnR.style.display = "block";
   }
   wins.onmouseout=function(){
-    t=setInterval(move,1000)
-    btnL.style["z-index"]=0;
-    btnR.style["z-index"]=0;
+    t=setInterval(moveR,1000)
+    btnL.style.display="none";
+    btnR.style.display="none";
 
   }
   for(var i=0;i<imgs.length;i++){
@@ -83,21 +81,6 @@ var btnR=document.getElementsByClassName("btnR")[0]
     } imgs[num].style["z-index"]=5;
     spans[num].style.background="red"
   }
-
-
-  function move(){
-    num++
-    if(num==imgs.length){
-      num=0;
-    }
-    for(var i=0;i<imgs.length;i++){
-      imgs[i].style["z-index"]=0;
-      spans[i].style.background="gray"
-    } imgs[num].style["z-index"]=5;
-    spans[num].style.background="red"
-  }
-  
-
- }
+}
 
 

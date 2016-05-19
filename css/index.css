@@ -313,8 +313,9 @@
   font-weight: 400;
   font-family: "simsun";
   color: #fff;
-  opacity: 0.5;
+  opacity: 0.7;
   cursor: pointer;
+  display: none;
 }
 .btnR{
   width: 28px;
@@ -330,8 +331,9 @@
   font-weight: 400;
   font-family: "simsun";
   color: #fff;
-  opacity: 0.5;
+  opacity: 0.7;
   cursor: pointer;
+  display: none;
 }   
 .banner_img{
   width:740px;
@@ -468,14 +470,23 @@
 /*banner end*/
 
 /*two  start*/
-
 .two{
  margin: 10px auto;
  width:1170px;
  height:160px;
- background:#dfdfdf;
  padding:10px 15px;
-
+ overflow: hidden;
+ position: relative;
+}
+.twotwo{
+   background:#dfdfdf;
+  position: absolute;
+  height: 100%;
+  padding:10px 15px;
+  left: 0;
+  top:0;
+  width: 1485px;
+  z-index: -1;
 }
 .two1{
   width:285px;
@@ -485,7 +496,7 @@
   float:left;
 }
 #two1{
-  margin-right:0;
+  margin-right:15px;
 }
 .two1 a h1{
   color:#000;
@@ -505,11 +516,46 @@
 .two1_1 a:hover{
   margin-right: 2px;
   float:right;
-
 }
-
-
-
+.button{
+  width: 1170px;
+  height: 40px;
+  /*background: #ccc;*/
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top:0;
+  bottom:0;
+  line-height: 25px;
+  font-family: "Arial"
+}
+.buttonL{
+  float: left;
+  width: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color:#fff;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  opacity: 0.9;
+  background: red;
+  cursor: pointer;
+}
+.buttonR{
+  float: right;
+  width: 25px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color:#fff;
+  text-align: center;
+  line-height: 40px;
+  opacity: 0.9;
+  background: #ccc;
+  cursor: pointer;
+}
 
  
  /*two  end*/
@@ -964,7 +1010,7 @@ float:right;
     float: left;
     text-align: center;
     height: 47px;
-    width:640px;
+    width:50%;
     /*background: red;*/
   }
   .kywz{
@@ -974,7 +1020,7 @@ float:right;
     float: right;
     text-align: center;
     height: 47px;
-    width:709px;
+    width:50%;
     /*background: #ccc;*/
   }
 .gov1 a{
@@ -1012,6 +1058,10 @@ float:right;
   top:35px;
   left: -20px;
   z-index: 9;
+ }
+ .kefu1:hover,.kefu2:hover,.kefu3:hover{
+  left:-85px;
+  -webkit-transition: all 1.0s ease;
  }
 .kefu2{
   width: 86px;
